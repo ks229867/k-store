@@ -1,0 +1,372 @@
+/* BESTSELLER PAGE */
+.bestsellers-page {
+  width: 90%;
+  margin: 1rem auto;
+}
+.bestsellers-page h1, .bestsellers-page h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+.bestsellers-page h2 {
+  font-size: 2rem;
+}
+.bestsellers-page .select-genre-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.bestsellers-page .select-genre-container span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.bestsellers-page .select-genre-container form select {
+  padding: 0.5rem 0.8rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border: 2px solid var(--primary-color);
+  background-color: white;
+}
+.bestsellers-page .select-genre-container form button {
+  padding: 0.5rem 0.8rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.bestsellers-page .select-genre-container form button:hover {
+  background-color: var(--primary-color-hover);
+}
+@media screen and (max-width: 900px) {
+  .bestsellers-page .select-genre-container form select {
+    width: 60%;
+    font-size: 1.2rem;
+  }
+  .bestsellers-page .select-genre-container form button {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+  }
+}
+.bestsellers-page .bestseller-books-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  height: 550px;
+  width: 350px;
+  padding: 0.5rem;
+  position: relative;
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card .book-rank {
+  font-size: 2rem;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: -2rem;
+  left: -1rem;
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card .book-img {
+  height: 65%;
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card .book-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card .book-info {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card .book-info button {
+  padding: 3px 8px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card .book-info button:hover {
+  background-color: var(--primary-color-hover);
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card .book-info div {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.4rem 0;
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card .book-info div span {
+  font-weight: bold;
+  color: black;
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card .book-info span {
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+.bestsellers-page .bestseller-books-section .bestseller-book-card .book-info span:hover {
+  color: var(--primary-color-hover);
+}
+@media screen and (max-width: 900px) {
+  .bestsellers-page .bestseller-books-section .bestseller-book-card .book-info h3 {
+    font-size: 1rem;
+  }
+  .bestsellers-page .bestseller-books-section .bestseller-book-card .book-info p {
+    font-size: 0.8rem;
+  }
+  .bestsellers-page .bestseller-books-section .bestseller-book-card .book-info button, .bestsellers-page .bestseller-books-section .bestseller-book-card .book-info span {
+    font-size: 0.8rem;
+  }
+  .bestsellers-page .bestseller-books-section .bestseller-book-card .book-info div {
+    margin: 5px 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .bestsellers-page .bestseller-books-section .bestseller-book-card {
+    height: 430px;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .bestsellers-page {
+    margin-top: 3rem;
+  }
+}
+
+/* SEARCHED BOOKS CONTAINER */
+.searched-books-container {
+  margin: 5rem;
+}
+.searched-books-container span {
+  margin-left: 1rem;
+  color: var(--primary-color);
+}
+.searched-books-container .searched-books {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.searched-books-container .searched-books .searched-book-card {
+  width: 350px;
+  height: 500px;
+  border-radius: 6%;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.searched-books-container .searched-books .searched-book-card .searched-book-img {
+  height: 60%;
+  width: 80%;
+  margin: 0 auto;
+}
+.searched-books-container .searched-books .searched-book-card .searched-book-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.searched-books-container .searched-books .searched-book-card .searched-book-info {
+  margin-top: 0.5rem;
+}
+.searched-books-container .searched-books .searched-book-card .searched-book-info div {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.searched-books-container .searched-books .searched-book-card .searched-book-info div span {
+  color: black;
+}
+.searched-books-container .searched-books .searched-book-card .searched-book-info div button {
+  padding: 5px 8px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.searched-books-container .searched-books .searched-book-card .searched-book-info div button:hover {
+  background-color: var(--primary-color-hover);
+}
+.searched-books-container .searched-books .searched-book-card .searched-book-info span {
+  cursor: pointer;
+  font-weight: bold;
+}
+.searched-books-container .searched-books .searched-book-card .searched-book-info span:hover {
+  color: var(--primary-color-hover);
+}
+@media screen and (max-width: 900px) {
+  .searched-books-container .searched-books .searched-book-card .searched-book-info h3 {
+    font-size: 1rem;
+  }
+  .searched-books-container .searched-books .searched-book-card .searched-book-info p {
+    font-size: 0.8rem;
+  }
+  .searched-books-container .searched-books .searched-book-card .searched-book-info div button, .searched-books-container .searched-books .searched-book-card .searched-book-info div span {
+    font-size: 0.8rem;
+  }
+  .searched-books-container .searched-books .searched-book-card .searched-book-info div {
+    margin: 5px 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .searched-books-container .searched-books .searched-book-card {
+    height: 400px;
+    width: 250px;
+  }
+}
+
+/* CART CONTAINER */
+.cart-container {
+  margin-top: 3rem;
+}
+.cart-container .cart-heading {
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+.cart-container h1, .cart-container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.cart-container .cart-items {
+  margin: 2rem;
+  border: 3px solid var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.cart-container .cart-items .cart-item {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 0.5rem;
+  display: flex;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+.cart-container .cart-items .cart-item img {
+  height: 150px;
+  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cart-container .cart-items .cart-item .book-info {
+  margin-top: 1rem;
+}
+.cart-container .cart-items .cart-item .book-info h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.cart-container .cart-items .cart-item .book-info button {
+  margin: 1rem;
+  background: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 3px 6px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cart-container .cart-items .cart-item .book-info button:hover {
+  background-color: var(--primary-color-hover);
+}
+.cart-container .cart-items .cart-item .book-info .quantity-control {
+  margin-bottom: 0.5rem;
+}
+.cart-container .cart-items .cart-item .book-info .quantity {
+  margin: 0 5px;
+}
+@media screen and (max-width: 600px) {
+  .cart-container .cart-items .cart-item {
+    flex-direction: column;
+  }
+  .cart-container .cart-items .cart-item .book-info {
+    margin-top: 0;
+  }
+  .cart-container .cart-items .cart-item .book-info h3 {
+    font-size: 1.2rem;
+  }
+  .cart-container .cart-items .cart-item .book-info button {
+    margin: 0.5rem;
+  }
+}
+
+.bookdetail-container {
+  width: 80%;
+  margin: 5rem auto;
+}
+.bookdetail-container .bookdetail-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.bookdetail-container .bookdetail-section .bookdetail-img {
+  height: 300px;
+  width: 500px;
+  margin-top: 4rem;
+}
+.bookdetail-container .bookdetail-section .bookdetail-img img {
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bookdetail-container .bookdetail-section .bookdetail-info h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.bookdetail-container .bookdetail-section .bookdetail-info span {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.bookdetail-container .bookdetail-section .bookdetail-info p {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.bookdetail-container .bookdetail-section .bookdetail-info i {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.bookdetail-container .bookdetail-section .bookdetail-info i:hover {
+  color: var(--primary-color);
+}
+@media screen and (max-width: 900px) {
+  .bookdetail-container .bookdetail-section {
+    flex-direction: column;
+  }
+  .bookdetail-container .bookdetail-section .bookdetail-img {
+    height: 250px;
+    width: 300px;
+    margin-top: 2rem;
+  }
+  .bookdetail-container .bookdetail-section .bookdetail-img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .bookdetail-container .bookdetail-section .bookdetail-info {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .bookdetail-container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
