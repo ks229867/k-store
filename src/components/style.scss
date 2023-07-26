@@ -507,4 +507,12 @@ nav{
     .close-icon{
         font-size: 1.5rem;
     }
+
+    @media screen and (max-width:900px) {
+        position: fixed;
+        top: 5rem;
+        left: 0.5rem;
+        width: 200px;
+        height: 80px;
+    }
 }
